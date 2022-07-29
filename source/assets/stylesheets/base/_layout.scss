@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, min-max(700px, 100vh));
+  grid-template-areas:
+    "landing"
+    "services"
+    "process"
+    "whoweare"
+    "ourwork"
+    "workwithus"
+    "footer";
+}

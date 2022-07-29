@@ -1,0 +1,167 @@
+.services {
+  background-color: $base-background-1;
+  grid-area: services;
+  .cover {
+    background-color: $base-background-1;
+    height: 11rem;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+  }
+  .services-top-line {
+    border-top: 2px solid $black;
+    margin-top: 0rem;
+    width: 15rem;
+    z-index: 1000;
+  }
+
+  > h1 {
+    align-self: flex-start;
+    font-size: $title-font-size;
+    margin-left: 2.3rem;
+    position: relative;
+    z-index: 10;
+
+    span {
+      color: $exeed-turquoise;
+    }
+  }
+
+  > div {
+    display: flex;
+    margin-top: 7rem;
+  }
+
+  .service-image {
+    border-bottom-right-radius: 8rem;
+    border-top-right-radius: 8rem;
+    height: 13rem;
+    margin: 0;
+    position: relative;
+    width: 13rem;
+    z-index: 2;
+    img {
+      height: 100%;
+      min-height: 14rem;
+      min-width: 15rem;
+      object-fit: contain;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  .service-info {
+    margin: -1rem 2rem 0 3rem;
+    z-index: 2;
+
+    h1 {
+      display: inline-block;
+      margin: 0;
+      span {
+        border-bottom: 1px solid $black;
+        display: block;
+        margin-bottom: .5rem;
+      }
+    }
+    p {
+      font-size: .9em;
+      line-height: 1.6em;
+      padding-right: .5rem;
+    }
+  }
+  .website-design, .video-production, .branding {
+    flex-direction: row-reverse;
+
+    figure {
+      border-bottom-left-radius: 8rem;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 8rem;
+      border-top-right-radius: 0;
+    }
+  }
+  .website-design {
+    figure {
+      background-color: #829191;
+      img {
+        right: 1rem;
+      }
+    }
+  }
+  .content-creation {
+    figure {
+      background-color: #75DDDD;
+    }
+  }
+  .video-production {
+    figure {
+      background-color: #26547C;
+      width: 15rem;
+      img {
+        max-height: 11rem;
+        max-width: 11rem;
+        min-height: 0;
+        min-height: 0;
+        top: 1.5rem;
+      }
+    }
+  }
+  .digital-marketing {
+    figure {
+      background-color: #EF476F;
+    }
+  }
+  .branding {
+    figure {
+      background-color: #E85517;
+      img {
+        right: .2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 55em) {
+  .services {
+    .service-info {
+      margin: 3rem 5rem 0 7rem;
+      p {
+        font-size: 1em;
+        line-height: 1.6em;
+      }
+    }
+    .service-image {
+      border-radius: 50%;
+      height: 28rem;
+      margin-left: 6rem;
+      width: 28rem;
+    }
+    .website-design, .video-production, .branding {
+      figure {
+        border-radius: 50%;
+        margin-left: 0;
+        margin-right: 6rem;
+      }
+      .service-info {
+        margin: 3rem 7rem 0 5rem;
+      }
+    }
+    .video-production {
+      figure {
+        height: 28rem;
+        width: 28rem;
+        img {
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          max-height: 22rem;
+          max-width: 22rem;
+          min-height: 10rem;
+          min-height: 11rem;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
